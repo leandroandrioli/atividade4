@@ -1,0 +1,203 @@
+body {
+    background-image: url('../img/7.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: #696554 5px solid;
+    background: #479191;
+    opacity: 0.9;
+} 
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10%;
+    border: #dbdbdb 5px solid;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    right: auto;
+}
+
+/*CSS PARA OS DOIS MENUS*/
+.navbar {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+/* Links */
+.navbar a {
+  color: rgb(43, 41, 41);
+  text-decoration: none;
+  margin: 10px 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Ícone do menu (hambúrguer) */
+.menu-toggle {
+  display:grid;
+  font-size: 18px;
+  color: rgb(202, 44, 44);
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+/* Menu desktop */
+.menu {
+  display: flex;
+}
+
+/* Modo responsivo (mobile) */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #51db96;
+    text-align: center;
+  }
+
+  .menu a {
+    padding: 12px;
+    border-top: 1px solid #c56b05;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* FIM CSS MENU CADASTRO E PROJETOS*/
+
+p {
+    font-family: arial; font-size: 15px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+iframe {
+    font-family: arial;
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    position: relative;
+    left: 35%;
+    }
+
+h2 {
+    font-family: 'Arial Black', Arial, sans-serif; 
+    font: 20px;
+    font-style: normal;
+    color: rgb(156, 129, 129);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+
+article p {
+    font-family: arial; font-size: 15px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: justify;
+}
+
+legend {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    color: rgb(8, 31, 240);
+    text-align: center;
+    margin-top: 20px;
+    margin-left: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer {
+    font-family: arial;
+    font-size: 15px;
+    color: rgb(67, 192, 28);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}   
+
+/*Estilo para o botão alternar tema da página inicial*/
+button {
+  display: flex;
+  margin: 0%;
+  text-align: center;
+}
+
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-theme h1 {
+    color: black;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme h1 {
+    color: white;
+}
+.btn {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(14, 13, 13);
+    display: flexbox;
+    border-radius: 10px;
+    border: none;
+    font-size: 100%;
+    margin-left: 10px;;
+}
+
+.dark-theme button {
+    background: red;
+}
